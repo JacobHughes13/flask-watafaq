@@ -5,9 +5,9 @@
     <ul class="list-group">
         {% for name in astronauts %}
             <li class="list-group-item">
-                Каюта №{{ loop.index }} — {{ name }}
+                {{ name }} — Каюта № {{ loop.index }}
                 {% if loop.first %}
-                    (Капитан корабля)
+                    - капитан корабля
                 {% endif %}
             </li>
         {% endfor %}
