@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if "инженер" in prof.lower() or "строитель" in prof.lower() %}
+        <h2>Инженерные тренажеры</h2>
+        <img src="{{ url_for('static', filename='img/engineering_trainers.png') }}"
+             alt="Схема инженерных тренажеров"
+             style="margin:0px auto 0px auto; display:block"
+             width="800">
+    {% else %}
+        <h2>Научные симуляторы</h2>
+        <img src="{{ url_for('static', filename='img/engineering_trainers.png') }}"
+             alt="Схема научных симуляторов"
+             style="margin:0px auto 0px auto; display:block"
+             width="800">
+    {% endif %}
+{% endblock %}

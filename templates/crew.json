@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Иван",
+    "surname": "Иванов",
+    "photo": "/static/img/member1.png",
+    "specialties": ["Инженер", "Пилот", "Биолог"]
+  },
+  {
+    "name": "Анна",
+    "surname": "Петрова",
+    "photo": "/static/img/member2.png",
+    "specialties": ["Медик", "Связист", "Психолог"]
+  },
+  {
+    "name": "Сергей",
+    "surname": "Сидоров",
+    "photo": "/static/img/member3.png",
+    "specialties": ["Программист", "Робототехник", "Химик"]
+  }
+]

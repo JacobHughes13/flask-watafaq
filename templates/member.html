@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-center mb-4">Случайный член экипажа</h2>
+    <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ member.photo }}" class="card-img-top" alt="Фото члена экипажа">
+            <div class="card-body">
+                <h5 class="card-title">{{ member.name }} {{ member.surname }}</h5>
+                <p class="card-text">Специальности:</p>
+                <ul>
+                    {% for spec in member.specialties|sort %}
+                        <li>{{ spec }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
